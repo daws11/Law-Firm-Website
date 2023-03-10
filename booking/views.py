@@ -52,3 +52,40 @@ def bookings(request):
         return render(request, 'bookings.html', context)
     else:
         return redirect('../accounts/signup')
+
+
+def change_booking(request, booking_id):
+    """The view that renders the change_booking page where the user can
+    update a current booking.
+    """
+    record = get_object_or_404(Booking, id=booking_id)
+
+    if request.method == 'POST':
+        form = BookingForm(request.POST, instance=record)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'You succesfully updated your booking.')
+            return redirect('bookings')
+        else:
+            return render(request, 'change-booking.html', {'form': form})
+    form = BookingForm(instance=record)
+    context = {'form': form, 'record': record}
+    return render(request, 'change-booking.html', context)
+
+
+def delete_booking(request, booking_id):
+    """
+    Function enables user to delete a booking record
+    """
+
+    record = get_object_or_404(Booking, id=booking_id)
+    if request.method == "POST":
+        form = BookingForm(request.POST, instance=record)
+        if record.delete():
+            messages.success(request, 'Your booking has been deleted.')
+            return redirect('bookings')
+
+    form = BookingForm(instance=record)
+    context = {
+        'form': form, 'record': record}
+    return render(request, 'delete-booking.html', context)
