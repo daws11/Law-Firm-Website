@@ -1,32 +1,36 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404, HttpResponseRedirect
 from .models import *
 from .forms import BookingForm
 import datetime
 from django.contrib import messages
 
 
-# Create your views here.
 def index(request):
-    """This view renders the index.html page
-    and extends the base.html page
+    """renders the index.html page
     """
     return render(request, 'index.html')
 
 
 def services(request):
-    """
-    This view renders to the user the services page.
+    """ renders to the user the services page.
     """
     services = Service.objects.all()
     return render(request, 'services.html', {'services': services})
 
 
 def booknow(request):
-    """The view for the booking page. If user is logged in it renders the
-    booknow.html, otherwise it redirects user to the login page or signup page.
+    """renders to the booking page
     """
     if request.method == 'POST':
         form = BookingForm(request.POST)
+        # shows the message that the time of the day has been selected before
+        date = datetime.datetime.strptime(str(request.POST['date']), '%Y-%m-%d')
+        time = datetime.datetime.strptime(str(request.POST['time']), '%H:%M')
+        time = request.POST['time']
+        if Booking.objects.filter(date=date, time=time).exists():
+            messages.error(request, "Sorry, this time is already booked, please select another time")
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
         if form.is_valid():
             booking_form = form.save(commit=False)
             booking_form.user = request.user
@@ -40,9 +44,7 @@ def booknow(request):
 
 
 def bookings(request):
-    """This view checks if user is logged in and renders the
-    bookings.html page which shows user bookings and otherwise
-    it redirects to the signup page
+    """shows user bookings or redirects to the signup page
     """
     if request.user.is_authenticated:
         bookings = Booking.objects.filter(user=request.user)
@@ -55,13 +57,21 @@ def bookings(request):
 
 
 def change_booking(request, booking_id):
-    """The view that renders the change_booking page where the user can
-    update a current booking.
+    """renders the change_booking page where the user can
+    change a booking
     """
     record = get_object_or_404(Booking, id=booking_id)
 
     if request.method == 'POST':
         form = BookingForm(request.POST, instance=record)
+
+        date = datetime.datetime.strptime(str(request.POST['date']), '%Y-%m-%d')
+        time = datetime.datetime.strptime(str(request.POST['time']), '%H:%M')
+        time = request.POST['time']
+        if Booking.objects.filter(date=date, time=time).exists():
+            messages.error(request, "Sorry, this time is already booked, please select another time")
+            return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+
         if form.is_valid():
             form.save()
             messages.success(request, 'You succesfully updated your booking.')
@@ -75,7 +85,8 @@ def change_booking(request, booking_id):
 
 def delete_booking(request, booking_id):
     """
-    Function enables user to delete a booking record
+    renders the delete_booking page where the user can
+    delete a booking
     """
 
     record = get_object_or_404(Booking, id=booking_id)
