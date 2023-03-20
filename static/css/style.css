@@ -15,6 +15,27 @@
     color: #cda45e;
 }
 
+/* main background */
+.container-fluid {
+    padding: 0;
+}
+  
+#main-background {
+    background-image: url('https://res.cloudinary.com/dremtdt73/image/upload/v1678808564/main1_hui3nl.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+  
+#background-text{
+    padding: 40px;  
+}
+  
+#background-text h5 {
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
 /* footer */
 #footer {
     background: black;

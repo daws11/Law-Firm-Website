@@ -1,9 +1,22 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
-<div class="container-fluid">
-    <div class="row">
+<!-- Background image -->
+  <div class="container-fluid" >
+    <div class="text-center bg-image" id="main-background">
+      <div class="row py-4">
+        <div class="col-sm-12 col-md-6" id="background-text">
+          <div class="main-img py-5">
+            <h3 class="text-white p-3">WELCOME TO</h3>
+              <h1 class="text-white p-2"><strong>DE JURE LAW FIRM</strong> </h1>
+                <h5 class="text-white p-3">We are a leading law firm<br> With more than 20 years of experience</h5>
+                  <a class="btn btn-outline-light btn-lg add-post-button" id="book-btn" href="{% url 'booknow' %}" role="button">Book Now</a>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
 
         <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
