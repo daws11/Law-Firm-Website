@@ -21,41 +21,49 @@
   </head>
 
 
-<body>
+  <body>
+    <header>
+      <!-- Navbar  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="logo"><img src="https://res.cloudinary.com/dremtdt73/image/upload/v1679316052/logo-removebg-preview_1_znr8rk.png" style="width: 70px; height: 50px;"> </a>
+          <a class="navbar-brand" href="{% url 'home' %}">De Jure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="{% url 'home' %}">De Jure Law Firm</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto mr-5">
-        <li class="nav-item ">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Booking</a>
-        </li>
-        {% if user.is_authenticated %}
-        <li class="nav-item ">
-          <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
-        </li>
-        {% else %}
-        <li class="nav-item ">
-          <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-  </nav>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-5">
+              <li class="nav-item "><a class="nav-link" id="nav-link" href="{% url 'home' %}" >Home</a></li>
+              <li class="nav-item "><a class="nav-link" id="nav-link" href="#why-us" >About us</a></li>
+              <li class="nav-item "><a class="nav-link" id="nav-link" href="#blog" >Blog</a></li>
+              <li class="nav-item "><a class="nav-link" id="nav-link" href="#" >Contact</a></li>
+                {% if request.user.is_authenticated %}
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                  <i class="far fa-user-circle fa-lg me-1"></i>Welcome, {{ user.username }}
+                </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'bookings' %}">My bookings</a>
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+                  </div>
+              </li>
+                {% else %}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="far fa-user-circle fa-lg me-1"></i>
+                    </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'account_signup' %}">Sign Up</a>
+                        <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
+                      </div>
+                  </li>
+                {% endif %}
+                  </ul>
+                    <a href="{% url 'booknow' %}" class="btn btn-outline-light btn-lg add-post-button" id="book-btn">Book Now</a>
+          </div>    
+        </nav>
+    </header>
 
   <div class="container">
     <div class="row">

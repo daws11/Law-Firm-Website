@@ -1,0 +1,16 @@
+/* header */
+
+.navbar {
+    background: #28251f;
+    font-size: large;
+}
+
+#nav-link,
+#navbarDropdown {
+    color: #fff;
+}
+
+#book-btn {
+    border-color: #cda45e;
+    color: #cda45e;
+}
