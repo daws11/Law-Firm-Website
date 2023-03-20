@@ -254,4 +254,17 @@ body {
     text-align: center;
     padding-top: 30px;
 }
+
+/* team */
+#team-section {
+    padding: 0 30px 0 30px;
+  }
   
+#card-team-body {
+    text-align: center; 
+    background-color: white;
+  }
+  
+.social-link-team {
+    color: #daa520;
+  }
