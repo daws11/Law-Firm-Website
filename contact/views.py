@@ -5,10 +5,6 @@ from django.contrib import messages
 from .forms import ContactForm
 
 
-def home_page(request):
-    return render(request, 'index.html')
-
-
 @login_required
 def contact_page(request):
     if request.method == 'POST':
