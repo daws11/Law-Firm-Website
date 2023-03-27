@@ -5,19 +5,6 @@ import datetime
 from django.contrib import messages
 
 
-def index(request):
-    """renders the index.html page
-    """
-    return render(request, 'index.html')
-
-
-def services(request):
-    """ renders to the user the services page.
-    """
-    services = Service.objects.all()
-    return render(request, 'services.html', {'services': services})
-
-
 def booknow(request):
     """renders to the booking page
     """
@@ -79,7 +66,7 @@ def change_booking(request, booking_id):
         else:
             return render(request, 'change-booking.html', {'form': form})
     form = BookingForm(instance=record)
-    context = {'form': form, 'record': record}
+    context = {'record': record}
     return render(request, 'change-booking.html', context)
 
 
@@ -98,5 +85,5 @@ def delete_booking(request, booking_id):
 
     form = BookingForm(instance=record)
     context = {
-        'form': form, 'record': record}
+        'record': record}
     return render(request, 'delete-booking.html', context)
