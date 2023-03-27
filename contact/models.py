@@ -10,7 +10,6 @@ class ContactModel(models.Model):
         related_name="contact_user",
         null=True
         )
-   
     first_name = models.CharField(
         max_length=50,
         null=True
@@ -24,8 +23,8 @@ class ContactModel(models.Model):
         default=""
         )
     phone_number = models.CharField(
-        max_length=16, 
-        null=True, 
+        max_length=16,
+        null=True,
         blank=True)
     message = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
