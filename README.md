@@ -1,9 +1,13 @@
 # De Jure Law Firm
 (Developer: Kristina Orlichenko, github: kristaal)
 ![Mockup image]()
+<br>
 [Live webpage]()
+<br>
+[Github Repository](https://github.com/Kristaal/Law-Firm-Website)
 
 This project is built as part of the Code Institute Full Stack Software Development course. This is the website for Law Firm. The main goal of this project is to give a user the ability to book consultation at the De Jure Law Firm. User should also get a good feeling for the law firm and know what to expect. If the user books an appointment, they should be able to make updates to their appointments and delete it. Also users have ability to register, read, comment and leave a like on a blog.
+<hr>
 
 ## Table of Content
 
@@ -13,38 +17,52 @@ This project is built as part of the Code Institute Full Stack Software Developm
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
-    3. [User Stories](#user-stories)
-    4. [Site Owner Stories](#site-owner-stories)
+    3. [User Stories and Site Owner Stories](#user-stories-and-site-owner-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
     3. [Fonts](#fonts)
     4. [Structure](#structure)
-    5. [Wireframes](#wireframes)
-4. [Technologies Used](#technologies-used)
-    1. [Languages](#languages)
-    2. [Frameworks](#frameworks)
-    3. [Database](#database)
-    4. [Tools](#tools)
-5. [Features](#features)
-6. [Testing](#validation)
-    1. [HTML Validation](#HTML-validation)
-    2. [CSS Validation](#CSS-validation)
-    3. [JavaScript Validation](#javascript-validation)
-    4. [Accessibility](#accessibility)
-    5. [Performance](#performance)
-    6. [Device testing](#performing-tests-on-various-devices)
-    7. [Browser compatibility](#browser-compatability)
-    8. [Testing user stories](#testing-user-stories)
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
+    5. [Logic and Database Diagram](#logic-and-database-diagram)
+    6. [Wireframes](#wireframes)
+4. [Features](#features)
+    1. [Book page](#book-page)
+    2. [Booking dashboard](#booking-dashboard)
+    3. [Home](#home)
+    4. [Nav bar](#nav-bar)
+    5. [Hero Image](#hero-image)
+    6. [About](#about)  
+    7. [Blog](#blog)
+    7. [Post details](#post-details)
+    8. [Testimonials](#testimonials)
+    10. [Footer](#footer)
+    11. [Contact](#contact)
+    12. [Login and Logout](#login-and-logout)
+    13. [Admin](#admin)
+5. [Technologies Used](#technologies-used)
+6. [Bugs](#Bugs)
+7. [Validation](#validation)
+8. [Testing](#validation)
+9. [Security Features and Defensive Design](#security-features-and-defensive-design)
+    1. [User authentication](#user-authentication)
+    2. [Form Validation](#form-validation)
+    3. [Database Security](#database-security)
+10. [Deployment](#deployment)
+    1. [Local Deployment](#local-deployment)
+    2. [Production Deployment Initial](#production-deployment-initial)
+    3. [Production Deployment Update](#production-deployment-update)
+    4. [Making a Local Clone](#making-a-local-clone)
 10. [Credits](#credits)
+    1. [Media](#media)
+    2. [Code](#code)
 11. [Acknowledgments](#acknowledgments)
+
+<hr>
 
 ## Project Goals 
 This project is built as part of the Code Institute Full Stack Software Development course. This is the website for Law Firm. The main goal of this project is to give a user the ability to book consultation at the De Jure Law Firm. User should also get a good feeling for the law firm and know what to expect. If the user books an appointment, they should be able to make updates to their appointments and delete it. Also users have ability to register, read, comment and leave a like on a blog.
 
-### User Goals
+### User Goals 
 - Find a law firm that provides good quality and professional legal services
 - Book a legal consultation
 - Contact and leave a message to the law firm
@@ -55,6 +73,8 @@ This project is built as part of the Code Institute Full Stack Software Developm
 - Provide a way for new and existing customers to contact the law firm
 - Provide a booking system for the possibility to book a legal consultation
 - Provide essential information about the law firm 
+
+##### Back to [top](#table-of-content)<hr>
 
 ## User Experience
 
@@ -68,21 +88,34 @@ It might be obvious, but the target audience of this website is people who are l
 - Links and functions that work as expected
 - Good presentation and a visually appealing design regardless of screen size
 - Option to book the legal consultation
-- Option to view, edit and delete your consultations
+- Option to view, edit and delete your booked consultations
 - Ability to contact and leave a message to the law firm
 - Read a legal blog that can review common issues or questions
 - Accessibility
 
-### User Stories
+### User Stories and Site Owner Stories
 
-User stories were written together with website owner and were all written to fit within the agile methodology. They have the following criteria:
+User stories and Site Owner Stories were written to fit within the agile methodology. They have the following criteria:
 
-title
-clear description
-story points
-priority (must have, should have, could have)
+* title
+* clear description
+* acceptance criteria
+* tasks, when acceptance criteria alone weren't clear enough
+* story points
+* epic
+* priority (must have, should have, could have)
 
-To view all the user stories in detail, visit the project page: [user stories board](https://github.com/users/Kristaal/projects/9)
+In the picture below you can see an example of the user stories:
+
+<details><summary>User stories board</summary>
+<img src="">
+</details>
+<br>
+To view all the user stories in detail, visit the project page: 
+
+[user stories board](https://github.com/users/Kristaal/projects/9)
+
+##### Back to [top](#table-of-content)<hr>
 
 ## Design
 
@@ -100,55 +133,502 @@ For the colors on the web page, I used dark grays and browns that matched the ba
 For website I chose Noto Serif Lao and Tiro Devanagari Hindi fonts
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 10 separate pages:
-1. Home page
+The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 8 separate pages:
+1. Home page with blog section
 2. Post details page
 3. Booking page
 4. Edit booking page
-5. Login page
-6. Logout page
-7. Signup page
+5. Contact page
+6. Login page
+7. Logout page
+8. Signup page
 
-The website is designed to have a natural flow, with a strong focus on the booking functionality. Most pages include booking buttons or calls to book an appointment. The home page specifically features a booking button right on top, so a user doesn't have to scroll at all to make an appointment. This is especially handy and necessary for recurring customers, who will be the gross of the clientele. 
+The website is designed to have a natural flow, with a strong focus on the booking functionality, blog section and contact page. Most pages include booking buttons or calls to book an appointment. The home page specifically features a booking button right on top, so a user doesn't have to scroll at all to make an appointment. This is especially handy and necessary for recurring customers, who will be the gross of the clientele. 
+
+### Logic and Database Diagram
+
+The logic of the app was thought out by making a database diagram, to visualize which objects will need to be created for this app to be functional and how they will be connected to each other. Notably, the initial database diagram was incomplete, which was discovered during production of the app. See the images below:
+
+<details><summary>Database diagram:</summary>
+<img src="">
+</details>
+<br>
+
 ### Wireframes
-## Technologies Used
-### Languages
-### Frameworks
-### Database
-### Tools
+The wireframes can be seen below:
+
+**For Mobile view and small screens**
+
+<details><summary>Home page</summary>
+<img src="">
+</details>
+<details><summary>Booknow page</summary>
+<img src="">
+</details>
+<details><summary>Booking page</summary>
+<img src="">
+</details>
+<details><summary>Post detail page</summary>
+<img src="">
+</details>
+<details><summary>Contact page</summary>
+<img src="">
+</details>
+<details><summary>Sign up page</summary>
+<img src="">
+</details>
+<details><summary>Login/Logout page</summary>
+<img src="">
+</details>
+<br>
+
+**For Desktop view**
+
+<details><summary>Home page</summary>
+<img src="">
+</details>
+<details><summary>Booknow page</summary>
+<img src="">
+</details>
+<details><summary>Booking page</summary>
+<img src="">
+</details>
+<details><summary>Post detail page</summary>
+<img src="">
+</details>
+<details><summary>Contact page</summary>
+<img src="">
+</details>
+<details><summary>Sign up page</summary>
+<img src="">
+</details>
+<details><summary>Login/Logout page</summary>
+<img src="">
+</details>
+<br>
+
+##### Back to [top](#table-of-content)<hr>
+
 ## Features
-### Feature
 
-## Validation
+The app's biggest feature is of course the booking page and consequently, the user booking page. These two pages are all you need, to book an appointment, cancel the booked appointment or change its date. This is where we will start our journey:
 
-### HTML Validation
-### CSS Validation
-### JavaScript Validation
-### Accessibility
-### Performance 
-### Performing tests on various devices 
-### Browser Compatability
-### Testing user stories
 
-1. As a user, I want to ... so I can ...
+#### ***Book page***
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-
-<details><summary></summary>
+This page is where most users, especially the recurring ones, will spent the grunt of their time. When you first open the page, you will be welcomed by a simple form with datepicker. You are urged to select a service first
+<details><summary>Book page</summary>
 <img src="">
 </details>
 
+The datepicker will become fully visible and usable and users can select a date. When you select a date, the available times in the time picker will be rendered and user can scroll through the available times. After user picks a time, the time gets entered automatically in the date field of the booking form. The other fields in the form are either auto-filled when user is logged in, or filled in by user upon booking.
+
+<details><summary>Book page selected time/date</summary>
+<img src="">
+</details>
+<br>
+
+After hitting the book button, user will get confirmation of their booking and are urged to go to their booking dashboard.
+
+<details><summary>Book Confirmation</summary>
+<img src="">
+</details>
+<br>
+
+#### ***Booking dashboard***
+When the user goes to their booking dashboard, they are greeted a section with all their booked appointments. Which they can expand like an 'accordion' by clicking on the element.
+
+<details><summary>Booking dashboard </summary>
+<img src="">
+</details>
+<br>
+
+When an appointment lays further in the future, user can can delete the appointment by clicking on the delete button.
+When delete gets clicked, user will be asked to confirm their choice, by a modal that pops up. This is to make sure the user really meant to click the delete button, since cancelling an appointment by mistake would be very inconvenient.
+
+<details><summary>Booking dashboard delete </summary>
+<img src="">
+</details>
+<br>
+
+The other button present in the appointment accordions is a 'Change date' button. This button will allow the user to change the date or time of the appointment. After clicking the button, they will be redirected to a page similar to the booking page, except the service is pre-selected. 
+
+<details><summary>Booking dashboard edit</summary>
+<img src="">
+</details>
+<br>
+
+#### ***Home***
+
+Let's get on with the rest of the website. The home page features a few elements.
+
+#### ***Nav bar***
+
+At the top of the page you'll find a nav bar with booking buttons. The nav bar will display either a login button, or when user is logged in, their name. When user clicks their name, a menu will pop out with the options to log out or go to their booking dashboard.
+
+<details><summary>Nav bar </summary>
+<img src="">
+</details>
+
+<details><summary>Nav bar logged in </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Hero Image***
+
+The hero image will probably be the very first element that catches the users eye when visiting this website. It's a stunning image of Lady of Justice with booking buttons
+
+<details><summary>Hero Image </summary>
+<img src="">
+</details>
+<br>
+
+#### ***About***
+
+After user scrolls down a bit, they will see the animated "Why Choose Our Law Firm section", than "About us" section and "Our team" section where user can read more about law firm and team
+
+<details><summary>Why us </summary>
+<img src="">
+</details>
+
+<details><summary>About us </summary>
+<img src="">
+</details>
+
+<details><summary>Our Team </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Blog***
+
+the user can find the blog section. The blog is accompanied by a photo selected for the topic of the post, the date of its addition and the number of likes are written. every post is clickable. based on the topic of the post, the user can click on the title and go to the page with this post.
+
+<details><summary>Blog </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Post details***
+After selecting a post, the user can go to a separate post details page that shows the title, post, likes, and comments. The user can also comment on each post if he registers
+
+<details><summary>Post details </summary>
+<img src="">
+</details>
+<br>
+
+After hitting the submit button, users will get a message that their comments is awaiting approval and will soon be added to the site 
+
+<details><summary>Comment confirmation </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Testimonials***
+Below the blog, user will find a little slider with testimonials 
+
+<details><summary>Testimonials</summary>
+<img src="">
+</details>
+<br>
+
+#### ***Footer***
+
+At the bottom of the page, there is a footer. The footer houses an address with the location of law firm, some contact info and the social links.
+
+<details><summary>Footer </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Contact***
+
+The contact page displays a simple form for the user to fill out in order to send a message to the owner.
+
+<details><summary>Contact page </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Login and Logout***
+
+The user must create an account to book a consultation or leave comment.
+To do this, he is asked to fill out a form on the page with the required fields: username and password. There is also an optional email field.
+
+<details><summary>Sign up</summary>
+<img src="">
+</details>
+<br>
+
+A username and password are required to log in existing users.
+The user can use the navigation menu. After a successful login, the user receives a message at the top of the screen and is redirected to the page with their bookings. If the user has no bookings, then he sees a message about the absence of orders and an offer to make a booking.
+
+<details><summary>Login </summary>
+<img src="">
+</details>
+<br>
+
+Logging out of the account is done through the menu, after which the user is redirected to the logout page where he must confirm his desire to log out of the account. After a successful logout, the user is returned to the home page and receives a message at the top of the screen.
+
+<details><summary>Logout</summary>
+<img src="">
+</details>
+<br>
+
+#### ***Admin***
+
+Site owner has a lot of control over the website and database entries via the admin panel. The admin can look at registered email-adresses, appointments, contact messages, posts, comments and likes. 
+If they login as a superuser, they can edit/delete/add a whole range of objects. Let's have a look at some of them:
+
+<details><summary>Admin</summary>
+<img src="">
+</details>
+<br>
+
+After some appointments are booked, you'll see a list of appointments in the admin panel:
+
+<details><summary>Admin bookings</summary>
+<img src="">
+</details>
+<br>
+Which when opened, look as follows:
+
+<details><summary>Admin bookings edit</summary>
+<img src="">
+</details>
+<br>
+
+As admin you can add all necessary services:
+
+<details><summary>Admin services</summary>
+<img src="">
+</details>
+<br>
+
+As admin you can add a post for a legal blog. You'll see a list of posts in the admin panel:
+
+<details><summary>Admin blog</summary>
+<img src="">
+</details>
+<br>
+
+Admin always can change or delete each post. Which when opened, look as follows:
+
+<details><summary>Admin post change</summary>
+<img src="">
+</details>
+<br>
+
+All comments left by users are waiting for approval in the admin panel
+
+<details><summary>Admin comments</summary>
+<img src="">
+</details>
+<br>
+
+Admin can change each comment
+
+<details><summary>Admin comments</summary>
+<img src="">
+</details>
+<br>
+
+After user left a contact message via contact page, admin'll see a list of messages in the admin panel:
+
+<details><summary>Admin contact messages</summary>
+<img src="">
+</details>
+<br>
+
+Admin can see all registered users
+
+<details><summary>Admin contact messages</summary>
+<img src="">
+</details>
+<br>
+
+##### Back to [top](#table-of-content)<hr>
+
+
+## Technologies Used
+
+[HTML](https://html.spec.whatwg.org/) - for the structure of the website and mocking of the terminal (written by Code Institute)
+
+[CSS](https://www.w3.org/Style/CSS/Overview.en.html) - to provide styling to the page.
+
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - for the structure of the website and mocking of the terminal (written by Code Institute)
+
+[Python](https://www.python.org/) - to write all the logic of the app
+
+[Django](https://www.djangoproject.com/) - used as main framework for the app, which both all backend and most frontend elements are built on. <br>
+The following notable libraries/packages were added to django:
+
+* django-ses: for handling emails with Amazon's SES.
+* django-allauth: for handing all user models and login functionality.
+* cloudinary: for saving images in cloudinary and serving them to the client.
+* django-crispy-forms: for making the django forms look better.
+
+[ElephantSQL](https://www.elephantsql.com/) - used to manage a PostgreSQL database.
+
+[Bootstrap 4.6](https://getbootstrap.com/) - used to style the grunt of the project.
+
+[Jquery](https://jquery.com/) - to make DOM manipulation a bit less painful.
+
+[Lucidchart](https://www.lucidchart.com/pages/) used to make a database diagram.
+
+[Gitpod](https://www.gitpod.io/) - used to connect a browser based VScode to github.
+
+[Github](https://github.com/) - used for version control and deployment of the website.
+
+[Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1) - was used to track the progress of the project in general and of every application in the project.
+
+[Heroku](https://dashboard.heroku.com/) - to deploy the app.
+
+[JShint](https://jshint.com/) - used to validate javascript.
+
+[NuHtmlChecker](https://validator.w3.org/nu/) - used to validate HTML.
+
+[W3C CSS validator](https://jigsaw.w3.org/css-validator/) - was used to validate CSS code for the website.
+
+[Multi Device Website Mockup Generator](https://techsini.com/multi-mockup/index.php) - to create an image of the website shown on different devices.
+
+[Google Fonts:](https://fonts.google.com/) - was used to to incorporate font styles. 
+
+[Font Awesome](https://fontawesome.com/) - was used to create the icons used on the website.
+
+[Am I Responsive](http://ami.responsivedesign.is/) - to generate an image showcasing the website's responsiveness to different screen sizes 
+
+[Pip3](https://pypi.org/project/pip/) - is the package manager to install Python modules and libraries
+
+[Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/) - "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
+##### Back to [top](#table-of-content)<hr>
 
 ## Bugs
+Extensive testing was done to make sure all the features work as expected. To read all about this, please go to the separate [testing document](TESTING.md).
 
-| **Bug** | **Fix** |
-| ----------- | ----------- |
+##### Back to [top](#table-of-content)<hr>
+
+## Validation
+Extensive testing was done to make sure all the features work as expected. To read all about this, please go to the separate [testing document](TESTING.md).
+
+
+##### Back to [top](#table-of-content)<hr>
+
+## Testing
+
+Extensive testing was done to make sure all the features work as expected. To read all about this, please go to the separate [testing document](TESTING.md).
+
+##### Back to [top](#table-of-content)<hr>
+
+## Security Features and Defensive Design
+
+### User authentication
+
+* Django's all auth was used for login and sign up functionality.
+* Django's superuser is used to limit access to admin panel.
+
+### Form Validation
+
+Extensive form validation is used on front end as well as backend.
+
+### Database Security
+
+All secret keys connecting the database are stored in a env.py file that is never pushed to github. Furthermore, Cross-Site Request Forgery (CSFR) tokens were used on all forms throughout the project.
+
+##### Back to [top](#table-of-content)<hr>
+
 ## Deployment
-### Heroku
-### Forking the Repository
-### Cloning the Repository
+
+### Local Deployment
+
+To test the app locally, the terminal within VScode was used. The steps to run this:
+
+* In your project workspace folder, open a terminal
+* Run the command: ```python3 manage.py runserver```
+* Hit the 'open browser' button or visit ```http://localhost:8000/``` in the browser.
+* Use the website as usual.
+
+A local database was used for most of the local deployment usage, since it was necessary for the automated tests to run. However, the switch to using the production database could be easily made, in case migrations needed to be performed or otherwise. Furthermore, in the development version, DEBUG was set to False, so error messages would show follow.
+
+### Production Deployment Initial
+
+Before starting work, the project was deployed to Heroku. This was done early in the process, to prevent having to deal with difficulties of deployment close to the project deadline. The following steps needed to be performed:
+
+#### Create Heroku app:
+
+* Login in to Heroku
+* Create a new app.
+* Select "New" and "Create new app".
+* Give the new app a name and click "Create new app".
+* Select a region (Europe for this app).
+
+#### Connect Postgres Database:
+
+* Open your app on the main dashboard of Heroku.
+* Open the Resources tab and scroll to the add-ons section.
+* Type 'Postgres' and select the Heroku Postgres option.
+* Copy the DATABASE_URL in the Config Vars section of the Settings tab.
+* To use the Postgres database in your development environment, copy the DATABASE_URL in your env.py file.
+
+#### Deploy App on Heroku:
+
+* Click "Settings".
+* Navigate to the "Config Vars" section and click "Reveal Config Vars"
+* Add SECRET_KEY variable
+* Add CLOUDINARY_URL variable
+* Add AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY variables.
+* Under "Deployment Method" click on "GitHub" to get access to your repository.
+* Enable Automatic Deploys" or click "Deploy Branch" to deploy your app.
+
+### Production Deployment Update
+
+Since Heroku stopped offering free tiers on the 28th of november 2022, it was necessary to make a few adjustments to the whole production deployment of the app. 
+
+#### PostgreSQL database:
+
+The Postgres database add-on that was previously used within Heroku was now no longer free and thus a different service had to be used. The choice went to [ElephantSQL](https://www.elephantsql.com/), since they offer a free tier. A [script](https://github.com/Code-Institute-Org/postgres-migration-tool) written by Code Institutes team was used to copy the original database to the new database. The steps are described in the [github readme](https://github.com/Code-Institute-Org/postgres-migration-tool) of that script.
+
+After that, the steps were as follows:
+
+* remove database add on from Heroku.
+* remove old DATABASE_URL config var from settings and post new url from ElephantSQL database in its place.
+* transform app from free tier to an eco dyno.
+
+### Making a Local Clone
+1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name choose button "Code",  click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open your development editor of choice and open a terminal window in a directory of your choice
+5. Type *git clone*, and then paste the URL you copied in Step 3.
+
+``> git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY``
+
+Your local clone will be created.
+
+For more information follow this [link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
+
+##### Back to [top](#table-of-content)<hr>
+
 ## Credits
+
 ### Media
+[Pexels-Pavel Danilyuk](https://www.pexels.com/collections/lawyer-6ksdigf/) - I used open source Pexels and free images from library Pavel Danilyuk
+
 ### Code
+
+* [Code Institute](https://learn.codeinstitute.net/dashboard)- The structure and the code of the project was based on two walkthroughs by the Code Institute: "Hello Django" - I created CRUD functionalities based on the examples of this walkthrough and "From I think  therefore I blog" -  I borrowed confirmation messages code and also followed the site deployment steps outlined here.
+* [Stack Overflow](https://stackoverflow.com/) - for research into code functionalities and problem solving. 
+* [Codepen](https://codepen.io/features/) -  for the css code used on homepage 
+* [Official Django Documentation](https://docs.djangoproject.com/en/4.1/ref/) - for code expressions and code functionalities.
+* [Johnny's Barber Shop](https://johnnysbarbershop.ie/) -  as inspiration source for booking platform
+* [Date Picker](https://gist.github.com/stasyao/99376eb0cf0ad3599f9737c421b5210e#part_4) - date picker field and minimum date validator
+##### Back to [top](#table-of-content)<hr>
+
 ## Acknowledgments
+
+### Special thanks to the following:
+- Code Institute
+- My friends and colleagues with whom I study on the course
+- My Mentor Spencer Barriball
+##### Back to [top](#table-of-content)<hr>
