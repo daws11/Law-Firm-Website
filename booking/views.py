@@ -66,7 +66,7 @@ def change_booking(request, booking_id):
         else:
             return render(request, 'change-booking.html', {'form': form})
     form = BookingForm(instance=record)
-    context = {'record': record}
+    context = {'form': form, 'record': record}
     return render(request, 'change-booking.html', context)
 
 
