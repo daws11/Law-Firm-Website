@@ -2,7 +2,10 @@
 body {
     font-family: 'Noto Serif Lao', serif;
 }
-  
+.row {
+    margin: 0;
+  } 
+
 .section-title {
     padding-bottom: 40px;
     padding: 20px 0 30px 0;
@@ -345,11 +348,11 @@ body {
       border-radius: 50%;
 }
 
-  .carousel .testimonial-wrapper {
+.carousel .testimonial-wrapper {
       padding: 0 10px;
 }
 
-  .carousel .testimonial {
+.carousel .testimonial {
       color: black;
       position: relative;
       padding: 15px;
@@ -359,7 +362,7 @@ body {
       margin-bottom: 15px;
 }
 
-  .carousel .testimonial::after {
+.carousel .testimonial::after {
       content: "";
       width: 15px;
       height: 15px;
@@ -427,16 +430,17 @@ body {
 }
   
 #footer .footer-top .footer-info h3 {
-    font-size: 24px;
+    font-size: 17px;
     margin: 0 0 20px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
     font-weight: 400;
     text-transform: uppercase; 
+    color: #cda45e;
 }
   
 #footer .footer-top .footer-info p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;    
     color: #fff;
@@ -467,3 +471,13 @@ body {
     text-align: center;
     padding-top: 30px;
 }
+
+/* booking page */
+.booking-page {
+    min-height: 50vh;
+   }
+
+/* signup, login and logout pages */
+.login-container, .signup-container, .confirmation-contaner {
+    background: linear-gradient(115deg, #141313, #282A2B,  #5B3016);
+   }
