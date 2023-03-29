@@ -5,15 +5,31 @@ from .models import Post
 from .forms import CommentForm
 
 
+class Home(View):
+    """
+    View to render home page.
+    """
+    def get(self, request):
+        """
+        Get method, to render home html.
+        """
+        return render(request, "index.html")
+
+
 class PostList(generic.ListView):
+    """
+    View to render blog page.
+    """
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    template_name = "blog.html"
     paginate_by = 6
 
 
 class PostDetail(View):
-
+    """
+    View to render post detail page.
+    """
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -67,6 +83,9 @@ class PostDetail(View):
 
 
 class PostLike(View):
+    """
+    class for function leave a like
+    """
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -75,6 +94,7 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 class About(View):
     """

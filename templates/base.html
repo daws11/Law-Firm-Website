@@ -20,7 +20,6 @@
       <title>De Jure Law Firm</title>
   </head>
 
-
   <body>
     <header>
       <!-- Navbar  -->
@@ -36,7 +35,7 @@
             <ul class="navbar-nav ml-auto mr-5">
               <li class="nav-item "><a class="nav-link" id="nav-link" href="{% url 'home' %}" >Home</a></li>
               <li class="nav-item "><a class="nav-link" id="nav-link" href="{% url 'about' %}" >About us</a></li>
-              <li class="nav-item "><a class="nav-link" id="nav-link" href="#blog" >Blog</a></li>
+              <li class="nav-item "><a class="nav-link" id="nav-link" href="{% url 'blog' %}" >Blog</a></li>
               <li class="nav-item "><a class="nav-link" id="nav-link" href="{% url 'contact' %}" >Contact</a></li>
                 {% if request.user.is_authenticated %}
               <li class="nav-item dropdown">
