@@ -28,13 +28,13 @@ This project is built as part of the Code Institute Full Stack Software Developm
 4. [Features](#features)
     1. [Book page](#book-page)
     2. [Booking dashboard](#booking-dashboard)
-    3. [Home](#home)
-    4. [Nav bar](#nav-bar)
-    5. [Hero Image](#hero-image)
-    6. [About](#about)  
-    7. [Blog](#blog)
-    7. [Post details](#post-details)
-    8. [Testimonials](#testimonials)
+    3. [Blog](#blog)
+    4. [Post details](#post-details)
+    5. [Home](#home)
+    6. [Nav bar](#nav-bar)
+    7. [Hero Image](#hero-image)
+    8. [About](#about)  
+    9. [Testimonials](#testimonials)
     10. [Footer](#footer)
     11. [Contact](#contact)
     12. [Login and Logout](#login-and-logout)
@@ -133,15 +133,17 @@ For the colors on the web page, I used dark grays and browns that matched the ba
 For website I chose Noto Serif Lao and Tiro Devanagari Hindi fonts
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 8 separate pages:
-1. Home page with blog section
-2. Post details page
-3. Booking page
-4. Edit booking page
-5. Contact page
-6. Login page
-7. Logout page
-8. Signup page
+The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 10 separate pages:
+1. Home page 
+2. About us page
+3. Blog page
+4. Post details page
+5. Booking page
+6. Edit booking page
+7. Contact page
+8. Login page
+9. Logout page
+10. Signup page
 
 The website is designed to have a natural flow, with a strong focus on the booking functionality, blog section and contact page. Most pages include booking buttons or calls to book an appointment. The home page specifically features a booking button right on top, so a user doesn't have to scroll at all to make an appointment. This is especially handy and necessary for recurring customers, who will be the gross of the clientele. 
 
@@ -258,6 +260,30 @@ The other button present in the appointment accordions is a 'Change date' button
 </details>
 <br>
 
+#### ***Blog***
+
+The user can find the blog section. The blog is accompanied by a photo selected for the topic of the post, the date of its addition and the number of likes are written. every post is clickable. based on the topic of the post, the user can click on the title and go to the page with this post.
+
+<details><summary>Blog </summary>
+<img src="">
+</details>
+<br>
+
+#### ***Post details***
+After selecting a post, the user can go to a separate post details page that shows the title, post, likes, and comments. The user can also comment on each post if he registers
+
+<details><summary>Post details </summary>
+<img src="">
+</details>
+<br>
+
+After hitting the submit button, users will get a message that their comments is awaiting approval and will soon be added to the site 
+
+<details><summary>Comment confirmation </summary>
+<img src="">
+</details>
+<br>
+
 #### ***Home***
 
 Let's get on with the rest of the website. The home page features a few elements.
@@ -297,30 +323,6 @@ After user scrolls down a bit, they will see the animated "Why Choose Our Law Fi
 </details>
 
 <details><summary>Our Team </summary>
-<img src="">
-</details>
-<br>
-
-#### ***Blog***
-
-the user can find the blog section. The blog is accompanied by a photo selected for the topic of the post, the date of its addition and the number of likes are written. every post is clickable. based on the topic of the post, the user can click on the title and go to the page with this post.
-
-<details><summary>Blog </summary>
-<img src="">
-</details>
-<br>
-
-#### ***Post details***
-After selecting a post, the user can go to a separate post details page that shows the title, post, likes, and comments. The user can also comment on each post if he registers
-
-<details><summary>Post details </summary>
-<img src="">
-</details>
-<br>
-
-After hitting the submit button, users will get a message that their comments is awaiting approval and will soon be added to the site 
-
-<details><summary>Comment confirmation </summary>
 <img src="">
 </details>
 <br>
