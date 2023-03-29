@@ -7,6 +7,10 @@ from .forms import ContactForm
 
 @login_required
 def contact_page(request):
+    """
+    A function to open contact us page
+    and provide contact form
+    """
     if request.method == 'POST':
         email = request.user.email
         contact_form = ContactForm(request.POST, initial={'email': email})

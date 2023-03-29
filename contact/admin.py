@@ -5,6 +5,9 @@ from .models import ContactModel
 
 @admin.register(ContactModel)
 class ContactModelAdmin(admin.ModelAdmin):
+    """
+    A class to show Contact Model in admin panel
+    """
     list_filter = (
         'first_name',
         'last_name',
@@ -21,5 +24,5 @@ class ContactModelAdmin(admin.ModelAdmin):
         'message',
         'created_date')
 
-    search_fields = ['phone_number',]
+    search_fields = ['phone_number', ]
     list_filter = (('created_date', DateRangeFilter),)

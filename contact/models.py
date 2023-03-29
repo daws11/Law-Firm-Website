@@ -3,7 +3,9 @@ from django.contrib.auth.models import User
 
 
 class ContactModel(models.Model):
-
+    """
+    A class for the Contact model
+    """
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
