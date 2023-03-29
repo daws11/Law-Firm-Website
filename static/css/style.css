@@ -44,13 +44,11 @@ body {
     background: #28251f;
     font-size: large;
 }
-
-#nav-link,
-#navbarDropdown {
+#nav-home, #nav-about, #nav-blog, #nav-contact, #navbarDropdown {
     color: #fff;
 }
 
-#book-btn {
+#book-btn, #book-btn-main {
     border-color: #cda45e;
     color: #cda45e;
 }
@@ -202,7 +200,7 @@ body {
     padding: 0 30px 0 30px;
 }
   
-#card-team-body {
+#card-team-body-1, #card-team-body-2, #card-team-body-3, #card-team-body-4 {
     text-align: center; 
     background-color: white;
 }
