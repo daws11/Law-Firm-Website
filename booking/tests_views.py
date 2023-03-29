@@ -53,7 +53,8 @@ class TestBookingViews(TestCase):
         """
         test for open page for edit booking
         """
-        response = self.client.get(reverse('change_booking', args=[self.booking.id]))
+        response = self.client.get(reverse(
+            'change_booking', args=[self.booking.id]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'change-booking.html')
 
@@ -61,7 +62,8 @@ class TestBookingViews(TestCase):
         """
         test for open page for delete booking
         """
-        response = self.client.get(reverse('delete_booking', args=[self.booking.id]))
+        response = self.client.get(reverse(
+            'delete_booking', args=[self.booking.id]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'delete-booking.html')
 

@@ -1,11 +1,12 @@
 from django.contrib import admin
 from .models import Service, Booking
 
-# Register your models here.
-
 
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
+    """
+    A class for display services on admin panel
+    """
     list_display = ("service_name", "price")
 
 
