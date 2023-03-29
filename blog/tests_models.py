@@ -42,4 +42,5 @@ class TestPostModel(TestCase):
         Test to check string method for function for Model app
         """
         comment = self.comment
-        self.assertEqual(str(comment), f'Comment {comment.body} by {self.user.username}')
+        self.assertEqual(
+            str(comment), f'Comment {comment.body} by {self.user.username}')
