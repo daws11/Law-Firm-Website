@@ -1,4 +1,4 @@
-from django.test import TestCase
+from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
 from .models import Service, Booking
@@ -13,11 +13,12 @@ class TestBookingViews(TestCase):
         """
         Set Up function to create user, login and booking
         """
+        self.client = Client()
         self.user = User.objects.create_user(
             username='Demi', email='demi@gmail.com',
             password='demidemi')
         self.user.save()
-        self.client.login(username='demi', password='demidemi')
+        self.client.login(username='Demi', password='demidemi')
         self.service = Service.objects.create(
             service_name="test service",
             price=666,
@@ -48,6 +49,11 @@ class TestBookingViews(TestCase):
         response = self.client.get(reverse('bookings'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'bookings.html')
+
+    def test_unauthorized_redirect(self):
+        self.client.logout()
+        response = self.client.get(reverse('bookings'))
+        self.assertEqual(response.status_code, 302)
 
     def test_get_booking_edit_page(self):
         """
