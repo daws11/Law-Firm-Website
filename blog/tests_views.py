@@ -33,6 +33,22 @@ class TestBlogViews(TestCase):
         )
         self.comment.save()
 
+    def test_get_home(self):
+        """
+        test for open home page
+        """
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'index.html')
+
+    def test_get_about_page(self):
+        """
+        test for open about page
+        """
+        response = self.client.get(reverse('about'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'about.html')
+
     def test_open_post_detail(self):
         """
         test open post detail page
