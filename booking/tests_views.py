@@ -155,3 +155,21 @@ class TestBookingViews(TestCase):
             }
         )
         self.assertEqual(response.status_code, 302)
+
+    def test_user_cannot_book(self):
+        """
+        test for book functionality
+        """
+        response = self.client.post(
+            reverse('booknow'),
+            {
+                'user': self.user,
+                'service': self.service.id,
+                'name': 'test',
+                'email': 'test@g.com',
+                'phone': '+380553333333',
+                'date':  datetime.date(2022, 4, 11),
+                'time': '10:00'
+            }
+        )
+        self.assertEquals(response.status_code, 200)
