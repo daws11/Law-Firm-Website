@@ -54,6 +54,7 @@ class TestBlogViews(TestCase):
         test open post detail page
         """
         slug = self.post.slug
+        self.post.likes.add(self.user)
         response = self.client.get(reverse('post_detail', args=[slug]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'post_detail.html')
@@ -63,6 +64,7 @@ class TestBlogViews(TestCase):
         test post method for blog page
         """
         slug = self.post.slug
+        self.post.likes.add(self.user)
         response = self.client.post(reverse('post_detail', args=[slug]))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'post_detail.html')
@@ -83,6 +85,17 @@ class TestBlogViews(TestCase):
         test for like functionality
         """
         slug = self.post.slug
+        response = self.client.post(
+            reverse('post_like', args=[slug]), {
+            })
+        self.assertEquals(response.status_code, 302)
+
+    def test_can_unlike(self):
+        """
+        test for unlike
+        """
+        slug = self.post.slug
+        self.post.likes.add(self.user)
         response = self.client.post(
             reverse('post_like', args=[slug]), {
             })
