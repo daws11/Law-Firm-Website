@@ -146,7 +146,7 @@ To view all the user stories in detail, visit the project page:
 - Backlog, In Progress, Done headings were used in the kanban
 
 <details><summary>Kanban</summary>
-<img src="dstatic/user story/user_story_board.png">
+<img src="static/user story/kanban.png">
 </details>
 
 <details><summary>Epics</summary>
@@ -158,6 +158,10 @@ To view all the user stories in detail, visit the project page:
 <img src="static/user story/epic_5.png">
 </details>
 
+<details><summary>User_stories</summary>
+<img src="static/user story/users_stories.png">
+</details>
+<br>
 
 ##### Back to [top](#table-of-content)<hr>
 
@@ -169,9 +173,11 @@ Website design was designed to look professional, clean and modern looking
 ### Colour
 For the colors on the web page, I used dark grays and browns that matched the background image very well and created a nice and cohesive look while still being accessible and providing enough contrast between the foreground and background elements. I also chose the golden color to give the site an expensive look and focus attention
 
+<br>
 <details><summary>Colour Pallete</summary>
 <img src="static/img/colour-pallete.png">
 </details>
+<br>
 
 ### Fonts
 For website I chose Noto Serif Lao and Tiro Devanagari Hindi fonts
@@ -218,7 +224,7 @@ The logic of the app was thought out by making a database diagram, to visualize 
     - is_active
     - date_joined
 
-  - PostModel contains the following:
+- PostModel contains the following:
     - ID
     - title
     - slug
@@ -231,7 +237,7 @@ The logic of the app was thought out by making a database diagram, to visualize 
     - status
     - likes
 
-  - Comment Model contains the following:
+- Comment Model contains the following:
     - ID
     - post (ForeignKey, PostModel)
     - name
@@ -240,12 +246,12 @@ The logic of the app was thought out by making a database diagram, to visualize 
     - created_on
     - approved
 
-  - Service Model contains the following:
+- Service Model contains the following:
     - ID
     - service_name
     - price
 
-  - Booking Model contains the following:
+- Booking Model contains the following:
     - ID
     - user
     - service
@@ -255,7 +261,7 @@ The logic of the app was thought out by making a database diagram, to visualize 
     - date
     - time
 
-  - ContactModel contains the following:
+- ContactModel contains the following:
     - ID
     - user (ForeignKey, User)
     - first_name
@@ -315,9 +321,11 @@ The app's biggest feature is of course the booking page and consequently, the us
 #### ***Book page***
 
 This page is where most users, especially the recurring ones, will spent the grunt of their time. When you first open the page, you will be welcomed by a simple form with datepicker. You are urged to select a service first
+
 <details><summary>Book page</summary>
 <img src="static/features/features_book.png">
 </details>
+<br>
 
 The datepicker will become fully visible and usable and users can select a date. When you select a date, the available times in the time picker will be rendered and user can scroll through the available times. After user picks a time, the time gets entered automatically in the date field of the booking form. The other fields in the form are either auto-filled when user is logged in, or filled in by user upon booking.
 
@@ -425,7 +433,7 @@ After user scrolls down a bit or choose About link in navbar, they will see the 
 <details><summary>About </summary>
 <img src="static/features/features_about.png">
 </details>
-
+<br>
 
 #### ***Testimonials***
 After user scrolls down home page, user will find a little slider with testimonials 
@@ -564,7 +572,9 @@ Admin can see all registered users
 
 [Python](https://www.python.org/) - to write all the logic of the app
 
-[Django](https://www.djangoproject.com/) - used as main framework for the app, which both all backend and most frontend elements are built on. <br>
+[Django](https://www.djangoproject.com/) - used as main framework for the app, which both all backend and most frontend elements are built on.
+
+<br>
 The following notable libraries/packages were added to django:
 
 * django-ses: for handling emails with Amazon's SES.
@@ -605,6 +615,7 @@ The following notable libraries/packages were added to django:
 [Pip3](https://pypi.org/project/pip/) - is the package manager to install Python modules and libraries
 
 [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/) - "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
+
 ##### Back to [top](#table-of-content)<hr>
 
 ## Bugs

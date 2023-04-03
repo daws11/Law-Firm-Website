@@ -8,8 +8,9 @@
     5. [Lighthouse](#lighthouse)
 3. [Browser Testing](#browser-testing)
 4. [Device Testing](#device-testing)
-5. [Automated testing](#automated-testing)
-6. [Manual Testing](#manual-testing)
+5. [Manual Testing](#manual-testing)
+6. [Automated testing](#automated-testing)
+
 
 Extensive testing was done to make sure all the features work as expected. I did both the automated test and the manual test.
 
@@ -25,6 +26,8 @@ Form to change booking does not appear | add 'form': form to the views.py file  
 Menu on mobile devices is positioned incorrectly | fixed CSS style   | fixed |
 |  
 Daterange filter doesn't work on admin panel | delete wrong version and install new   | fixed |
+
+##### Back to [top](#table-of-content)<hr>
 
 ## Validator Testing
 
@@ -175,12 +178,8 @@ All Python code was manually checked using [CI Python Linter](https://pep8ci.her
 </details>
 <br>
 
-
-
 ### Lighthouse
-
 Performance, best practices and SEO was tested using Lighthouse.
-
 
 - Desktop
 <details><summary>Home</summary>
@@ -246,6 +245,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="static/lighthouse/Lighthouse_mobile_signup.png">
 </details>
 
+##### Back to [top](#table-of-content)<hr>
+
 ## Browser Testing
 
 Testing has been carried out on the  following browsers: 
@@ -255,6 +256,8 @@ Testing has been carried out on the  following browsers:
 
 The site was constantly tested during the process of creating the site in the Gitpod Environment and the deployed site on Heroku was also tested in terms of user experience.
 The available functionality and user experience is reflected in the table below.
+
+##### Back to [top](#table-of-content)<hr>
 
 ## Device Testing
 The Project was tested using a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
@@ -270,9 +273,9 @@ The following devices have been tested:
 - iPhone 5/SE (Mobile)
 - iPhone 4 (Mobile)
 
-## Manual Testing
+##### Back to [top](#table-of-content)<hr>
 
-<br>
+## Manual Testing
 
 ### Site Navigation
 | Element               | Action     | Expected Result                                                    | Pass/Fail |
@@ -418,9 +421,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | Open website | Home page displays nav bar, website description, about us section etc | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_1.png">
 </details>
+<br>
 
 2. As a User I can use a navbar and social icons so that I can navigate the site and access socials
 
@@ -439,7 +443,7 @@ The following devices have been tested:
 | Click on the 'Book Now' link in the navigation bar | Book Now page will load| Works as expected |
  | Scroll to footer at bottom of page | Find social links | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_1.png">
 <img src="static/user story/user_story_1.png">
 <img src="static/user story/user_story_16_1.png">
@@ -452,8 +456,8 @@ The following devices have been tested:
 <img src="static/user story/user_story_17_1.png">
 <img src="static/user story/user_story_20_1.png">
 <img src="static/user story/user_story_5.png">
-
 </details>
+<br>
 
 3. As a User I can find a footer so that I can move to the social links, see working hours and find an address
 
@@ -461,18 +465,21 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | Scroll to footer at bottom of page | Find footer with social links, working hours and an address | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_5.png">
 </details>
+<br>
 
 4. As a User I can find testimonials so that I can read what clients are saying about company
+
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | Scroll to testimonials at bottom of home page | Find slider with all testimonials | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_4.png">
 </details>
+<br>
 
 5. As a Website owner I can add about us section so that users can find information about company
 
@@ -480,9 +487,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | Click on the 'About' link in the navigation bar | About page will load| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_5.png">
 </details>
+<br>
 
 6. As a User I can find a blog so that I can read regular updated legal posts
 
@@ -490,9 +498,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 |Click on the 'Blog' link in the navigation bar | Blog page will load and display all legal posts| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_6.png">
 </details>
+<br>
 
 7. As a user I can open the post details so that makes me more interested and I can read all information
 
@@ -500,9 +509,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 |Click on the title of the post on the blog page | Post details page will load and display post| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_7.png">
 </details>
+<br>
 
 8. As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
 
@@ -512,11 +522,12 @@ The following devices have been tested:
 |Login as admin | Admin panel will load | Works as expected |
 |Choose Blog model | Display blog model with function to add, delete, update or read post | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_8_1.png">
 <img src="static/user story/user_story_8_2.png">
 <img src="static/user story/user_story_9_1.png">
 </details>
+<br>
 
 9. As a Site Admin I can create draft posts so that I can finish writing the content later
 
@@ -525,10 +536,11 @@ The following devices have been tested:
 |On admin panel, choose Blog model and function add post | Display blog model with function to add post | Works as expected |
 |when admin create a post choose save as draft | Post will save as draft| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_9_1.png">
 <img src="static/user story/user_story_9_2.png">
 </details>
+<br>
 
 10. As a User I can view comments on an individual post so that I can read the conversation
 
@@ -536,9 +548,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | Scroll to comment section at bottom of post detail page | Find all comments that users left | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_10.png">
 </details>
+<br>
 
 11. As a User I can leave a comments so that allows me to participate in a forum-like discussion or leave my opinion
 
@@ -547,10 +560,11 @@ The following devices have been tested:
 |logged user open post details page and find a comment field | blog details page will display comment field for authorized user | Works as expected |
 |write comment and click send button | Post will send and user received message about that| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_11.png">
 <img src="static/user story/user_story_18_6.png">
 </details>
+<br>
 
 12. As a User I can view the number of likes on each post so that I can see which is the most popular or viral
 
@@ -558,9 +572,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | Open blog page | Find likes under each posts | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_13_1.png">
 </details>
+<br>
 
 13. As a User I can like a post so that I can interact with the content
 
@@ -569,10 +584,11 @@ The following devices have been tested:
 | open post details page and find a likes at the bottom of post | blog details page will display likes| Works as expected |
 |logged user clicks on like | Red like will display on the screen| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_13_1.png">
 <img src="static/user story/user_story_13_2.png">
 </details>
+<br>
 
 14. As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
 
@@ -581,10 +597,11 @@ The following devices have been tested:
 |Go on admin panel and choose comment model | Comment model will load | Works as expected |
 |Choose a new comment and approve it or disapprove as admin | Comment will display or not on post detail page| Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_14_1.png">
 <img src="static/user story/user_story_14_2.png">
 </details>
+<br>
 
 15. As a Site Owner I can add site pagination so users can see splitting list of my website’s blog posts into separate pages
 
@@ -592,9 +609,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 |Go on blog page | splitting list of posts will displays into separate pages if more than 6 | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_15.png">
 </details>
+<br>
 
 16. As a user I can register an account so that gives me more options as leave comment, like and opportunity to booking
 
@@ -603,10 +621,11 @@ The following devices have been tested:
 |Click on the 'Sign Up' link in the navigation bar| Signup page will load | Works as expected |
 |Fill the form | User will become authorazed and receive a message about this | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_16_1.png">
 <img src="static/user story/user_story_18_1.png">
 </details>
+<br>
 
 17. As a user I can logout so that can save my data
 
@@ -615,10 +634,11 @@ The following devices have been tested:
 |Click on the 'Logout' link in the navigation bar | Logout page will load and Modal pops up asking for confirmation | Works as expected |
 |Click on the 'Logout' button | User will become unauthorized | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_17_1.png">
 <img src="static/user story/user_story_18_2.png">
 </details>
+<br>
 
 18. As a Site owner I can add alert messages for users so that users can receive message about their actions
 
@@ -631,7 +651,7 @@ The following devices have been tested:
 |User deletes a booking | receives a message about it | Works as expected |
 |User leaves a comment | receives a message about it | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_18_1.png">
 <img src="static/user story/user_story_18_2.png">
 <img src="static/user story/user_story_18_3.png">
@@ -639,6 +659,7 @@ The following devices have been tested:
 <img src="static/user story/user_story_24_2.png">
 <img src="static/user story/user_story_18_6.png">
 </details>
+<br>
 
 19. As a user I can contact organization so that I can get in touch with a company
 
@@ -647,10 +668,11 @@ The following devices have been tested:
 | Click on the 'Contact' link in the navigation bar | Contact page will load| Works as expected |
 |Fill the form and click send |user redirected to contact page with message | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_19_1.png">
 <img src="static/user story/user_story_19_1.png">
 </details>
+<br>
 
 20. As a User I can book a consultation so that I reserve a date and time for consultation
 
@@ -659,10 +681,11 @@ The following devices have been tested:
 |Click on the 'Book Now' button in the navigation bar or on home page  | Book now page  will load  | Works as expected |
 |Fill the form and click send | Appointment gets booked, user redirected to bookings dashboard | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_20_1.png">
 <img src="static/user story/user_story_20_2.png">
 </details>
+<br>
 
 21. As a User I can not book a consultation already booked so that my booking is valid and not double booked
 
@@ -670,9 +693,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 | From the bookings page, attempt to book a consultation and date already booked | Error message displays to say booking not possible | Works as expected |
 
-<details><summary></summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_21.png">
 </details>
+<br>
 
 22. As a User I can find booking dashboard so I will see all my bookings
 
@@ -680,9 +704,10 @@ The following devices have been tested:
 ------------ | ------------ | ------------ |
 |Click on the 'Bookings' link in the navigation bar | Booking dashboard will load  | Works as expected |
 
-<details><summary>Bookings dashboard</summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_22.png">
 </details>
+<br>
 
 23. As a user I can edit booking so I receive an opportunity to change the date/time of the consultation
 
@@ -691,10 +716,11 @@ The following devices have been tested:
 |From 'My Bookings' click 'Change' on booking to be changed | Change bookings form will load  | Works as expected |
 |Change the date/time and click change | Appointment is changed, user redirected to bookings dashboard | Works as expected |
 
-<details><summary>Change booking</summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_23_1.png">
 <img src="static/user story/user_story_23_2.png">
 </details>
+<br>
 
 24. As a user I can delete a booking so I can cancel my consultation reservation
 
@@ -703,11 +729,13 @@ The following devices have been tested:
 | From 'My Bookings' click 'Delete' on booking to be cancelled| Modal pops up asking for confirmation  | Works as expected |
 | Click "Delete"| Booking will be delete  | Works as expected |
 
-<details><summary>Delete booking</summary>
+<details><summary>user story</summary>
 <img src="static/user story/user_story_24_1.png">
 <img src="static/user story/user_story_24_2.png">
-
 </details>
+<br>
+
+##### Back to [top](#table-of-content)<hr>
 
 ## Automated testing
 Testing was done using the built in Django module, unittest.
