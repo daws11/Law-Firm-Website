@@ -268,53 +268,40 @@ The logic of the app was thought out by making a database diagram, to visualize 
 ### Wireframes
 The wireframes can be seen below:
 
-**For Mobile view and small screens**
-
-<details><summary>Home page</summary>
-<img src="">
-</details>
-<details><summary>Booknow page</summary>
-<img src="">
-</details>
-<details><summary>Booking page</summary>
-<img src="">
-</details>
-<details><summary>Post detail page</summary>
-<img src="">
-</details>
-<details><summary>Contact page</summary>
-<img src="">
-</details>
-<details><summary>Sign up page</summary>
-<img src="">
-</details>
-<details><summary>Login/Logout page</summary>
-<img src="">
+<details><summary>All webpage</summary>
+<img src="static/wireframes/links.png">
 </details>
 <br>
 
-**For Desktop view**
-
 <details><summary>Home page</summary>
-<img src="">
+<img src="static/wireframes/wireframes_home.png">
 </details>
-<details><summary>Booknow page</summary>
-<img src="">
+<details><summary>About page</summary>
+<img src="static/wireframes/wireframes_about.png">
 </details>
-<details><summary>Booking page</summary>
-<img src="">
+<details><summary>Blog page</summary>
+<img src="static/wireframes/wireframes_blog.png">
 </details>
 <details><summary>Post detail page</summary>
-<img src="">
+<img src="static/wireframes/wireframes_postdetails.png">
 </details>
 <details><summary>Contact page</summary>
-<img src="">
+<img src="static/wireframes/wireframes_contact.png">
+</details>
+<details><summary>Booknow page</summary>
+<img src="static/wireframes/wireframes_booknow.png">
+</details>
+<details><summary>Bookings page</summary>
+<img src="static/wireframes/wireframes_mybookings.png">
 </details>
 <details><summary>Sign up page</summary>
-<img src="">
+<img src="static/wireframes/wireframes_signup.png">
 </details>
-<details><summary>Login/Logout page</summary>
-<img src="">
+<details><summary>Login page</summary>
+<img src="static/wireframes/wireframes_login.png">
+</details>
+<details><summary>Logout page</summary>
+<img src="static/wireframes/wireframes_logout.png">
 </details>
 <br>
 
