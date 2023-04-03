@@ -108,7 +108,7 @@ User stories and Site Owner Stories were written to fit within the agile methodo
 In the picture below you can see an example of the user stories:
 
 <details><summary>User stories board</summary>
-<img src="">
+<img src="static/user story/user_story_board.png">
 </details>
 <br>
 To view all the user stories in detail, visit the project page: 
