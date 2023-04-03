@@ -183,67 +183,81 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 - Desktop
 <details><summary>Home</summary>
-<img src="static/lighthouse/Lighthouse_desktop_home.png">
+<img src="static/lighthouse/lighthouse_desktop_home.png">
 </details>
 <details><summary>About</summary>
-<img src="static/lighthouse/Lighthouse_desktop_about.png">
+<img src="static/lighthouse/lighthouse_desktop_about.png">
 </details>
 <details><summary>Blog</summary>
-<img src="static/lighthouse/Lighthouse_decktop_blog.png">
+<img src="static/lighthouse/lighthouse_desktop_blog.png">
 </details>
 <details><summary>Post details</summary>
-<img src="static/lighthouse/Lighthouse_desktop_postdetail.png">
+<img src="static/lighthouse/lighthouse_desktop_postdetails.png">
 </details>
 <details><summary>Contact</summary>
-<img src="static/lighthouse/Lighthouse_desktop_contact.png">
+<img src="static/lighthouse/lighthouse_desktop_contact.png">
 </details>
 <details><summary>Book Now</summary>
-<img src="static/lighthouse/Lighthouse_desktop_booknow.png">
+<img src="static/lighthouse/lighthouse_desktop_booknow.png">
 </details>
 <details><summary>Bookings</summary>
-<img src="static/lighthouse/Lighthouse_decktop_bookings.png">
+<img src="static/lighthouse/lighthouse_desktop_bookings.png">
+</details>
+<details><summary>Bookings edit</summary>
+<img src="static/lighthouse/lighthouse_desktop_bookings_edit.png">
+</details>
+<details><summary>Bookings delete</summary>
+<img src="static/lighthouse/lighthouse_desktop_bookings_delete.png">
 </details>
 <details><summary>Login</summary>
-<img src="static/lighthouse/Lighthouse_desktop_login.png">
+<img src="static/lighthouse/lighthouse_desktop_login.png">
 </details>
 <details><summary>Logout</summary>
-<img src="static/lighthouse/Lighthouse_desktop_logout.png">
+<img src="static/lighthouse/lighthouse_desktop_logout.png">
 </details>
 <details><summary>Sign up</summary>
-<img src="static/lighthouse/Lighthouse_desktop_signup.png">
+<img src="static/lighthouse/lighthouse_desktop_signup.png">
 </details>
+<br>
 
 - Mobile
 <details><summary>Home</summary>
-<img src="static/lighthouse/Lighthouse_mobile_home.png">
+<img src="static/lighthouse/lighthouse_mobile_home.png">
 </details>
 <details><summary>About</summary>
-<img src="static/lighthouse/Lighthouse_mobile_about.png">
+<img src="static/lighthouse/lighthouse_mobile_about.png">
 </details>
 <details><summary>Blog</summary>
-<img src="static/lighthouse/Lighthouse_mobile_blog.png">
+<img src="static/lighthouse/lighthouse_mobile_blog.png">
 </details>
 <details><summary>Post details</summary>
-<img src="static/lighthouse/Lighthouse_mobile_postdetail.png">
+<img src="static/lighthouse/lighthouse_mobile_postdetails.png">
 </details>
 <details><summary>Contact</summary>
-<img src="static/lighthouse/Lighthouse_mobile_contact.png">
+<img src="static/lighthouse/lighthouse_mobile_contact.png">
 </details>
 <details><summary>Book Now</summary>
-<img src="static/lighthouse/Lighthouse_mobile_booknow.png">
+<img src="static/lighthouse/lighthouse_mobile_booknow.png">
 </details>
 <details><summary>Bookings</summary>
-<img src="static/lighthouse/Lighthouse_mobile_bookings.png">
+<img src="static/lighthouse/lighthouse_mobile_bookings.png">
+</details>
+<details><summary>Bookings edit</summary>
+<img src="static/lighthouse/lighthouse_mobile_bookings_edit.png">
+</details>
+<details><summary>Bookings delete</summary>
+<img src="static/lighthouse/lighthouse_mobile_bookings_delete.png">
 </details>
 <details><summary>Login</summary>
-<img src="static/lighthouse/Lighthouse_mobile_login.png">
+<img src="static/lighthouse/lighthouse_mobile_login.png">
 </details>
 <details><summary>Logout</summary>
-<img src="static/lighthouse/Lighthouse_mobile_logout.png">
+<img src="static/lighthouse/lighthouse_mobile_logout.png">
 </details>
 <details><summary>Sign up</summary>
-<img src="static/lighthouse/Lighthouse_mobile_signup.png">
+<img src="static/lighthouse/lighthouse_mobile_signup.png">
 </details>
+<br>
 
 ##### Back to [top](#table-of-content)<hr>
 
