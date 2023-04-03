@@ -1,6 +1,6 @@
 # De Jure Law Firm
 (Developer: Kristina Orlichenko, github: kristaal)
-![Mockup image]()
+![Mockup image](static/img/am_I_responsive.png)
 <br>
 [Live webpage](https://law-firm-website.herokuapp.com/)
 <br>
