@@ -326,20 +326,20 @@ The app's biggest feature is of course the booking page and consequently, the us
 
 This page is where most users, especially the recurring ones, will spent the grunt of their time. When you first open the page, you will be welcomed by a simple form with datepicker. You are urged to select a service first
 <details><summary>Book page</summary>
-<img src="">
+<img src="static/features/features_book.png">
 </details>
 
 The datepicker will become fully visible and usable and users can select a date. When you select a date, the available times in the time picker will be rendered and user can scroll through the available times. After user picks a time, the time gets entered automatically in the date field of the booking form. The other fields in the form are either auto-filled when user is logged in, or filled in by user upon booking.
 
 <details><summary>Book page selected time/date</summary>
-<img src="">
+<img src="static/features/features_book_datepicker.png">
 </details>
 <br>
 
 After hitting the book button, user will get confirmation of their booking and are urged to go to their booking dashboard.
 
 <details><summary>Book Confirmation</summary>
-<img src="">
+<img src="static/features/features_book_confirmation.png">
 </details>
 <br>
 
@@ -347,7 +347,7 @@ After hitting the book button, user will get confirmation of their booking and a
 When the user goes to their booking dashboard, they are greeted a section with all their booked appointments. Which they can expand like an 'accordion' by clicking on the element.
 
 <details><summary>Booking dashboard </summary>
-<img src="">
+<img src="static/features/features_booking_dashboard.png">
 </details>
 <br>
 
@@ -355,14 +355,16 @@ When an appointment lays further in the future, user can can delete the appointm
 When delete gets clicked, user will be asked to confirm their choice, by a modal that pops up. This is to make sure the user really meant to click the delete button, since cancelling an appointment by mistake would be very inconvenient.
 
 <details><summary>Booking dashboard delete </summary>
-<img src="">
+<img src="static/features/features_booking_delete.png">
+<img src="static/features/features_booking_delete_confirmation.png">
 </details>
 <br>
 
 The other button present in the appointment accordions is a 'Change date' button. This button will allow the user to change the date or time of the appointment. After clicking the button, they will be redirected to a page similar to the booking page, except the service is pre-selected. 
 
 <details><summary>Booking dashboard edit</summary>
-<img src="">
+<img src="static/features/features_booking_edit.png">
+<img src="static/features/fetures_booking_edit_confirmation.png">
 </details>
 <br>
 
@@ -371,7 +373,7 @@ The other button present in the appointment accordions is a 'Change date' button
 The user can find the blog section. The blog is accompanied by a photo selected for the topic of the post, the date of its addition and the number of likes are written. every post is clickable. based on the topic of the post, the user can click on the title and go to the page with this post.
 
 <details><summary>Blog </summary>
-<img src="">
+<img src="static/features/features_blog.png">
 </details>
 <br>
 
@@ -379,14 +381,24 @@ The user can find the blog section. The blog is accompanied by a photo selected 
 After selecting a post, the user can go to a separate post details page that shows the title, post, likes, and comments. The user can also comment on each post if he registers
 
 <details><summary>Post details </summary>
-<img src="">
+<img src="static/features/features_post_details.png">
+<img src="static/features/features_comment.png">
 </details>
 <br>
 
 After hitting the submit button, users will get a message that their comments is awaiting approval and will soon be added to the site 
 
 <details><summary>Comment confirmation </summary>
-<img src="">
+<img src="static/features/features_comment_confirmation.png">
+</details>
+<br>
+
+#### ***Contact***
+
+The contact page displays a simple form for the user to fill out in order to send a message to the owner.
+
+<details><summary>Contact page </summary>
+<img src="static/features/features_contact.png">
 </details>
 <br>
 
@@ -399,11 +411,11 @@ Let's get on with the rest of the website. The home page features a few elements
 At the top of the page you'll find a nav bar with booking buttons. The nav bar will display either a login button, or when user is logged in, their name. When user clicks their name, a menu will pop out with the options to log out or go to their booking dashboard.
 
 <details><summary>Nav bar </summary>
-<img src="">
+<img src="static/features/features_navbar_logged_out.png">
 </details>
 
 <details><summary>Nav bar logged in </summary>
-<img src="">
+<img src="static/features/features_navbar_logged_in.png">
 </details>
 <br>
 
@@ -412,32 +424,24 @@ At the top of the page you'll find a nav bar with booking buttons. The nav bar w
 The hero image will probably be the very first element that catches the users eye when visiting this website. It's a stunning image of Lady of Justice with booking buttons
 
 <details><summary>Hero Image </summary>
-<img src="">
+<img src="static/features/features_hero_image.png">
 </details>
 <br>
 
 #### ***About***
 
-After user scrolls down a bit, they will see the animated "Why Choose Our Law Firm section", than "About us" section and "Our team" section where user can read more about law firm and team
+After user scrolls down a bit or choose About link in navbar, they will see the animated "Why Choose Our Law Firm section", than "About us" section and "Our team" section where user can read more about law firm and team
 
-<details><summary>Why us </summary>
-<img src="">
+<details><summary>About </summary>
+<img src="static/features/features_about.png">
 </details>
 
-<details><summary>About us </summary>
-<img src="">
-</details>
-
-<details><summary>Our Team </summary>
-<img src="">
-</details>
-<br>
 
 #### ***Testimonials***
-Below the blog, user will find a little slider with testimonials 
+After user scrolls down home page, user will find a little slider with testimonials 
 
 <details><summary>Testimonials</summary>
-<img src="">
+<img src="static/features/features_testimonials.png">
 </details>
 <br>
 
@@ -446,16 +450,7 @@ Below the blog, user will find a little slider with testimonials
 At the bottom of the page, there is a footer. The footer houses an address with the location of law firm, some contact info and the social links.
 
 <details><summary>Footer </summary>
-<img src="">
-</details>
-<br>
-
-#### ***Contact***
-
-The contact page displays a simple form for the user to fill out in order to send a message to the owner.
-
-<details><summary>Contact page </summary>
-<img src="">
+<img src="static/features/features_footer.png">
 </details>
 <br>
 
@@ -465,7 +460,8 @@ The user must create an account to book a consultation or leave comment.
 To do this, he is asked to fill out a form on the page with the required fields: username and password. There is also an optional email field.
 
 <details><summary>Sign up</summary>
-<img src="">
+<img src="static/features/features_signup.png">
+<img src="static/features/features_signin_confirmation.png">
 </details>
 <br>
 
@@ -473,14 +469,16 @@ A username and password are required to log in existing users.
 The user can use the navigation menu. After a successful login, the user receives a message at the top of the screen and is redirected to the page with their bookings. If the user has no bookings, then he sees a message about the absence of orders and an offer to make a booking.
 
 <details><summary>Login </summary>
-<img src="">
+<img src="static/features/features_login.png">
+<img src="static/features/features_signin_confirmation.png">
 </details>
 <br>
 
 Logging out of the account is done through the menu, after which the user is redirected to the logout page where he must confirm his desire to log out of the account. After a successful logout, the user is returned to the home page and receives a message at the top of the screen.
 
 <details><summary>Logout</summary>
-<img src="">
+<img src="static/features/features_logout.png">
+<img src="static/features/features_logout_confirmation.png">
 </details>
 <br>
 
@@ -490,69 +488,76 @@ Site owner has a lot of control over the website and database entries via the ad
 If they login as a superuser, they can edit/delete/add a whole range of objects. Let's have a look at some of them:
 
 <details><summary>Admin</summary>
-<img src="">
+<img src="static/features/features_admin.png">
 </details>
 <br>
 
 After some appointments are booked, you'll see a list of appointments in the admin panel:
 
 <details><summary>Admin bookings</summary>
-<img src="">
+<img src="static/features/features_admin_booking.png">
 </details>
 <br>
 Which when opened, look as follows:
 
 <details><summary>Admin bookings edit</summary>
-<img src="">
+<img src="static/features/features_admin_booking_edit.png">
 </details>
 <br>
 
 As admin you can add all necessary services:
 
 <details><summary>Admin services</summary>
-<img src="">
+<img src="static/features/features_admin_services.png">
 </details>
 <br>
 
 As admin you can add a post for a legal blog. You'll see a list of posts in the admin panel:
 
 <details><summary>Admin blog</summary>
-<img src="">
+<img src="static/features/features_admin_blog.png">
 </details>
 <br>
 
 Admin always can change or delete each post. Which when opened, look as follows:
 
 <details><summary>Admin post change</summary>
-<img src="">
+<img src="static/features/features_admin_post_edit.png">
+</details>
+<br>
+
+All likes left by users admin saw in the admin panel
+
+<details><summary>Admin likes</summary>
+<img src="static/features/features_admin_likes.png">
 </details>
 <br>
 
 All comments left by users are waiting for approval in the admin panel
 
 <details><summary>Admin comments</summary>
-<img src="">
+<img src="static/features/features_admin_comment.png">
 </details>
 <br>
 
 Admin can change each comment
 
-<details><summary>Admin comments</summary>
-<img src="">
+<details><summary>Admin comments edit</summary>
+<img src="static/features/features_admin_comments_edit.png">
 </details>
 <br>
 
 After user left a contact message via contact page, admin'll see a list of messages in the admin panel:
 
 <details><summary>Admin contact messages</summary>
-<img src="">
+<img src="static/features/features_admin_contact_messages.png">
 </details>
 <br>
 
 Admin can see all registered users
 
-<details><summary>Admin contact messages</summary>
-<img src="">
+<details><summary>Admin registered users</summary>
+<img src="static/features/features_admin_users.png">
 </details>
 <br>
 
