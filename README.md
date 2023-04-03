@@ -199,6 +199,68 @@ The logic of the app was thought out by making a database diagram, to visualize 
 <img src="static/img/database diagram.png">
 </details>
 <br>
+- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production).
+- Five database models was created to show all the content.
+
+- User Model (standard django model) contains the following:
+    - user_id
+    - password
+    - last_login
+    - is_superuser
+    - username
+    - first_name
+    - last_name
+    - email
+    - is_staff
+    - is_active
+    - date_joined
+
+  - PostModel contains the following:
+    - ID
+    - title
+    - slug
+    - author (ForeignKey, User)
+    - featured_image
+    - excerpt
+    - content
+    - updated_on
+    - created_on
+    - status
+    - likes
+
+  - Comment Model contains the following:
+    - ID
+    - post (ForeignKey, PostModel)
+    - name
+    - email
+    - body
+    - created_on
+    - approved
+
+  - Service Model contains the following:
+    - ID
+    - service_name
+    - price
+
+  - Booking Model contains the following:
+    - ID
+    - user
+    - service
+    - name
+    - email
+    - phone
+    - date
+    - time
+
+  - ContactModel contains the following:
+    - ID
+    - user (ForeignKey, User)
+    - first_name
+    - last_name
+    - email
+    - phone
+    - message
+    - created_date
 
 ### Wireframes
 The wireframes can be seen below:
