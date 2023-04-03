@@ -10,15 +10,6 @@
 4. [Device Testing](#device-testing)
 5. [Automated testing](#automated-testing)
 6. [Manual Testing](#manual-testing)
-    1. [Site Navigation](#site-navigation)
-    2. [Home Page](#home-page)
-    3. [Post detail page](#post-detail-page)
-    4. [Booknow page](#booknow-page)
-    5. [Booking Dashboard page ](#booking-dashboard-page)
-    6. [Contact page](#contact-page)
-    7. [Login page](#login-page)
-    8. [Sign up page](#sign-up-page)
-    9. [Logout page](#logout-page)
 
 Extensive testing was done to make sure all the features work as expected. I did both the automated test and the manual test.
 
@@ -187,6 +178,73 @@ All Python code was manually checked using [CI Python Linter](https://pep8ci.her
 
 
 ### Lighthouse
+
+Performance, best practices and SEO was tested using Lighthouse.
+
+
+- Desktop
+<details><summary>Home</summary>
+<img src="static/lighthouse/Lighthouse_desktop_home.png">
+</details>
+<details><summary>About</summary>
+<img src="static/lighthouse/Lighthouse_desktop_about.png">
+</details>
+<details><summary>Blog</summary>
+<img src="static/lighthouse/Lighthouse_decktop_blog.png">
+</details>
+<details><summary>Post details</summary>
+<img src="static/lighthouse/Lighthouse_desktop_postdetail.png">
+</details>
+<details><summary>Contact</summary>
+<img src="static/lighthouse/Lighthouse_desktop_contact.png">
+</details>
+<details><summary>Book Now</summary>
+<img src="static/lighthouse/Lighthouse_desktop_booknow.png">
+</details>
+<details><summary>Bookings</summary>
+<img src="static/lighthouse/Lighthouse_decktop_bookings.png">
+</details>
+<details><summary>Login</summary>
+<img src="static/lighthouse/Lighthouse_desktop_login.png">
+</details>
+<details><summary>Logout</summary>
+<img src="static/lighthouse/Lighthouse_desktop_logout.png">
+</details>
+<details><summary>Sign up</summary>
+<img src="static/lighthouse/Lighthouse_desktop_signup.png">
+</details>
+
+- Mobile
+<details><summary>Home</summary>
+<img src="static/lighthouse/Lighthouse_mobile_home.png">
+</details>
+<details><summary>About</summary>
+<img src="static/lighthouse/Lighthouse_mobile_about.png">
+</details>
+<details><summary>Blog</summary>
+<img src="static/lighthouse/Lighthouse_mobile_blog.png">
+</details>
+<details><summary>Post details</summary>
+<img src="static/lighthouse/Lighthouse_mobile_postdetail.png">
+</details>
+<details><summary>Contact</summary>
+<img src="static/lighthouse/Lighthouse_mobile_contact.png">
+</details>
+<details><summary>Book Now</summary>
+<img src="static/lighthouse/Lighthouse_mobile_booknow.png">
+</details>
+<details><summary>Bookings</summary>
+<img src="static/lighthouse/Lighthouse_mobile_bookings.png">
+</details>
+<details><summary>Login</summary>
+<img src="static/lighthouse/Lighthouse_mobile_login.png">
+</details>
+<details><summary>Logout</summary>
+<img src="static/lighthouse/Lighthouse_mobile_logout.png">
+</details>
+<details><summary>Sign up</summary>
+<img src="static/lighthouse/Lighthouse_mobile_signup.png">
+</details>
 
 ## Browser Testing
 
@@ -698,16 +756,5 @@ Coverage was also used to generate a report
 <img src="static/unittest/unit-test-blog-coverage.png">
 </details>
 <br>
-
-## Manual Testing
-### Site Navigation
-### Home Page
-### Post detail page
-### Booknow page
-### Booking Dashboard page
-### Contact page
-### Login page
-### Sign up page
-### Logout page
 
 
