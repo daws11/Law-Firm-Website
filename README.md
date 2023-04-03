@@ -2,7 +2,7 @@
 (Developer: Kristina Orlichenko, github: kristaal)
 ![Mockup image]()
 <br>
-[Live webpage]()
+[Live webpage](https://law-firm-website.herokuapp.com/)
 <br>
 [Github Repository](https://github.com/Kristaal/Law-Firm-Website)
 
@@ -105,40 +105,59 @@ User stories and Site Owner Stories were written to fit within the agile methodo
 * epic
 * priority (must have, should have, could have)
 
-In the picture below you can see an example of the user stories:
-
-<details><summary>User stories board</summary>
-<img src="static/user story/user_story_board.png">
-</details>
-<br>
 To view all the user stories in detail, visit the project page: 
 
 [user stories board](https://github.com/users/Kristaal/projects/9)
+
+### Users
 
 1. As a first time user I can visit a website so that should help me understand what the site is about
 2. As a User I can use a navbar and social icons so that I can navigate the site and access socials
 3. As a User I can find a footer so that I can move to the social links, see working hours and find an address
 4. As a User I can find testimonials so that I can read what clients are saying about company
-5. As a Website owner I can add about us section so that users can find information about company
 6. As a User I can find a blog so that I can read regular updated legal posts
-7. As a user I can open the post details so that makes me more interested and I can read all information
-8. As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
-9. As a Site Admin I can create draft posts so that I can finish writing the content later
+7. As a User I can open the post details so that makes me more interested and I can read all information
 10. As a User I can view comments on an individual post so that I can read the conversation
 11. As a User I can leave a comments so that allows me to participate in a forum-like discussion or leave my opinion
 12. As a User I can view the number of likes on each post so that I can see which is the most popular or viral
 13. As a User I can like a post so that I can interact with the content
-14. As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
-15. As a Site Owner I can add site pagination so users can see splitting list of my website’s blog posts into separate pages
-16. As a user I can register an account so that gives me more options as leave comment, like and opportunity to booking
-17. As a user I can logout so that can save my data
-18. As a Site owner I can add alert messages for users so that users can receive message about their actions
-19. As a user I can contact organization so that I can get in touch with a company
+16. As a User I can register an account so that gives me more options as leave comment, like and opportunity to booking
+17. As a User I can logout so that can save my data
+19. As a User I can contact organization so that I can get in touch with a company
 20. As a User I can book a consultation so that I reserve a date and time for consultation
 21. As a User I can not book a consultation already booked so that my booking is valid and not double booked
 22. As a User I can find booking dashboard so I will see all my bookings
-23. As a user I can edit booking so I receive an opportunity to change the date/time of the consultation
-24. As a user I can delete a booking so I can cancel my consultation reservation
+23. As a User I can edit booking so I receive an opportunity to change the date/time of the consultation
+24. As a User I can delete a booking so I can cancel my consultation reservation
+
+### Site Owner
+5. As a Site owner I can add about us section so that users can find information about company
+18. As a Site owner I can add alert messages for users so that users can receive message about their actions
+### Admin / Authorised User
+8. As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
+9. As a Site Admin I can create draft posts so that I can finish writing the content later
+14. As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+15. As a Site Owner I can add site pagination so users can see splitting list of my website’s blog posts into separate pages
+
+### Kanban, Epics & User Stories
+
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
+
+<details><summary>Kanban</summary>
+<img src="dstatic/user story/user_story_board.png">
+</details>
+
+<details><summary>Epics</summary>
+<img src="static/user story/all_epics.png">
+<img src="static/user story/epic_1.png">
+<img src="static/user story/epic_2.png">
+<img src="static/user story/epic_3.png">
+<img src="static/user story/epic_4.png">
+<img src="static/user story/epic_5.png">
+</details>
+
 
 ##### Back to [top](#table-of-content)<hr>
 
@@ -151,7 +170,7 @@ Website design was designed to look professional, clean and modern looking
 For the colors on the web page, I used dark grays and browns that matched the background image very well and created a nice and cohesive look while still being accessible and providing enough contrast between the foreground and background elements. I also chose the golden color to give the site an expensive look and focus attention
 
 <details><summary>Colour Pallete</summary>
-<img src="">
+<img src="static/img/colour-pallete.png">
 </details>
 
 ### Fonts
@@ -177,7 +196,7 @@ The website is designed to have a natural flow, with a strong focus on the booki
 The logic of the app was thought out by making a database diagram, to visualize which objects will need to be created for this app to be functional and how they will be connected to each other. Notably, the initial database diagram was incomplete, which was discovered during production of the app. See the images below:
 
 <details><summary>Database diagram:</summary>
-<img src="">
+<img src="static/img/database diagram.png">
 </details>
 <br>
 
