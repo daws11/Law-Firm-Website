@@ -115,6 +115,31 @@ To view all the user stories in detail, visit the project page:
 
 [user stories board](https://github.com/users/Kristaal/projects/9)
 
+1. As a first time user I can visit a website so that should help me understand what the site is about
+2. As a User I can use a navbar and social icons so that I can navigate the site and access socials
+3. As a User I can find a footer so that I can move to the social links, see working hours and find an address
+4. As a User I can find testimonials so that I can read what clients are saying about company
+5. As a Website owner I can add about us section so that users can find information about company
+6. As a User I can find a blog so that I can read regular updated legal posts
+7. As a user I can open the post details so that makes me more interested and I can read all information
+8. As a Site Admin I can create, read, update and delete posts so that I can manage my blog content
+9. As a Site Admin I can create draft posts so that I can finish writing the content later
+10. As a User I can view comments on an individual post so that I can read the conversation
+11. As a User I can leave a comments so that allows me to participate in a forum-like discussion or leave my opinion
+12. As a User I can view the number of likes on each post so that I can see which is the most popular or viral
+13. As a User I can like a post so that I can interact with the content
+14. As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments
+15. As a Site Owner I can add site pagination so users can see splitting list of my website’s blog posts into separate pages
+16. As a user I can register an account so that gives me more options as leave comment, like and opportunity to booking
+17. As a user I can logout so that can save my data
+18. As a Site owner I can add alert messages for users so that users can receive message about their actions
+19. As a user I can contact organization so that I can get in touch with a company
+20. As a User I can book a consultation so that I reserve a date and time for consultation
+21. As a User I can not book a consultation already booked so that my booking is valid and not double booked
+22. As a User I can find booking dashboard so I will see all my bookings
+23. As a user I can edit booking so I receive an opportunity to change the date/time of the consultation
+24. As a user I can delete a booking so I can cancel my consultation reservation
+
 ##### Back to [top](#table-of-content)<hr>
 
 ## Design
