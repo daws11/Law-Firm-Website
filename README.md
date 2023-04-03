@@ -177,7 +177,7 @@ For the colors on the web page, I used dark grays and browns that matched the ba
 For website I chose Noto Serif Lao and Tiro Devanagari Hindi fonts
 
 ### Structure
-The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 10 separate pages:
+The page is structured in a user-friendly and easy-to-learn way. Upon arriving at the website the user sees the home page, where the purpose of the site is explained. The website consists of 13 separate pages:
 1. Home page 
 2. About us page
 3. Blog page
@@ -188,6 +188,9 @@ The page is structured in a user-friendly and easy-to-learn way. Upon arriving a
 8. Login page
 9. Logout page
 10. Signup page
+11. 403 page
+12. 404 page
+13. 500 page
 
 The website is designed to have a natural flow, with a strong focus on the booking functionality, blog section and contact page. Most pages include booking buttons or calls to book an appointment. The home page specifically features a booking button right on top, so a user doesn't have to scroll at all to make an appointment. This is especially handy and necessary for recurring customers, who will be the gross of the clientele. 
 
