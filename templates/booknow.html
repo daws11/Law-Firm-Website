@@ -4,7 +4,8 @@
 
 
 {% block content %}
-<div class="booknow-page d-flex justify-content-center">
+<div class="booknow-page d-flex justify-content-center" style="background: linear-gradient(115deg, #141313, #282A2B,  #5B3016); color: white;
+">
     <div class="text-center p-5">
         <h2 class="bookings-title  mb-4">Book your appointment</h2>
             {% if user.is_authenticated %}
@@ -17,7 +18,7 @@
                     </form>
                 </div>
             {% else %}
-            <div class="booknow-block d-flex">
+            <div class="booknow-block d-flex" style="min-height: 60vh;">
                 <div class="p-3  text-left">
                     <p>To make a reservation, please <a href="{% url 'account_login' %}">Login</a></p>
                     <p>If you have not created an account yet, then please <a href="{% url 'account_signup' %}">Sign up</a></p>
